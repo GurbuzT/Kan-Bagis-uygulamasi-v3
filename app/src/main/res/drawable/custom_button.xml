@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"> <!-- dikdörtgen şeklinde olduğunu belirttik -->
+    <!-- bu şekilde corner stroke gibi tasarımları eklemeyi kolaylaştırdık. -->
+    <solid android:color="#6A0DAD"/>
+    <corners android:radius="20dp"/>
+</shape>
