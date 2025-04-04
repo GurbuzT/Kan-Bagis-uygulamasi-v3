@@ -5,6 +5,107 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register">
+    app:passwordToggleEnabled="true"
+    tools:context=".Login">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#D3D3D3"
+        android:padding="30dp"
+        >
+
+        <!-- Üst Başlık -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acil Kan Bağışı Bildirme Uygulaması Kayıt Olma Ekranı"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@color/red"
+            android:layout_marginBottom="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"/>
+
+
+        <!-- Email'in girildiği yer -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editEmail"
+            android:hint="Mail Adresinizi Giriniz"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/ic_mail"
+            android:drawablePadding="10dp"/>
+
+        <!-- Şifre'nin Girildiği Yer -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerPassword"
+            android:hint="Şifrenizi Giriniz"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/passwordimage"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:drawablePadding="10dp"/>
+
+        <!-- Şifre'nin Onaylandığı Yer -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerPassword2"
+            android:hint="Şifrenizi Onaylayınız"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/passwordimage"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:drawablePadding="10dp"/>
+
+
+
+        <!-- Kullanıcı Oluştur Butonu -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerButton"
+            android:text="Kullanıcı Oluştur"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goBackButton"
+            android:text="Geri Dönmek için basınız"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="20dp"/>
+
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/loginimage2"
+            android:layout_marginTop="50dp"
+            />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
